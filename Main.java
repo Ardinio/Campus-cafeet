@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Deque;
+import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,6 +13,8 @@ public class Main {
 
     static Scanner scanner = new Scanner(System.in);
     static Produkt[] produkter = {new Flaskvatten(), new Macka(), new Kaffe()};
+    static List<Bestallning> bestallningar = new ArrayList<>();
+    static Deque<Bestallning> bestallningsKon = new LinkedList<>();
 
     static void printMenu() {
         System.out.println("""
